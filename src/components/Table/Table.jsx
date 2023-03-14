@@ -13,14 +13,14 @@ const products = [
 ];
 
 function rankFormatter(cell, row, rowIndex, formatExtraData) {
-    return (<>
-        <i className={formatExtraData[cell]} />
-        console.log(cell)
-    </>
+    return (
+        <i className='glyphicon glyphicon-chevron-up' />
+
+
     );
 }
 
-const columns = [{ dataField: 'id', text: 'Product ID' }, { dataField: 'name', text: ' Product name' }, { dataField: 'price', text: 'Product Name' }, { dataField: 'origin', text: 'Product origin' }, {
+const columns = [{ dataField: 'id', text: 'Product ID' }, { dataField: 'name', text: ' Product name' }, { dataField: 'origin', text: 'Product origin' }, {
     dataField: 'rank',
     text: 'Rank',
     formatter: rankFormatter,
